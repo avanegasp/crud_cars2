@@ -1,0 +1,12 @@
+<h1>muestrame el carro</h1>
+
+<ul>
+
+<% @cars.each do |car| %>
+  <li><%= car.brand %></li>
+<% end %>
+
+</ul>
+
+
+<a href="/cars/new">Create new car</a>
