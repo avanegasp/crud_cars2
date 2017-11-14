@@ -4,8 +4,30 @@
 
 <% @cars.each do |car| %>
   <li><%= car.brand %></li>
-<% end %>
+  <a href="/cars/<%=car.id%>/edit">Editar</a>
+  <form action="/cars/<%=car.id%>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="Borrar">
+  </form>
+  </ul>
 
+  <ul>
+  <li><%= car.model %></li>
+  <a href="/cars/<%=car.id%>/edit">Editar</a>
+  <form action="/cars/<%=car.id%>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="Borrar">
+  </form>
+  </ul>
+
+  <ul>
+  <li><%= car.img_url %></li>
+  <a href="/cars/<%=car.id%>/edit">Editar</a>
+  <form action="/cars/<%=car.id%>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="Borrar">
+  </form>
+<% end %>
 </ul>
 
 

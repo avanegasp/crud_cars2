@@ -1,0 +1,11 @@
+<form  action="/cars/<%= @car.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+    Brand: <input type="text" name="brand" value="<%= @car.brand %>">
+    Model: <input type="text" name="model" value="<%= @car.model %>">
+    Brand: <input type="text" name="img_url" value="<%= @car.img_url %>">
+
+  <div>
+    <input type="submit"  value="Editar Carro">
+  </div>
+
+</form>
