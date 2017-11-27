@@ -1,28 +1,18 @@
 <h1>muestrame el carro</h1>
 
-<ul>
+<!-- <ul>
+  <li><%=@car.brand%></li>
 
-<% @cars.each do |car| %>
-  <li><%= car.brand %></li>
-  <a href="/cars/<%=car.id%>/edit">Editar</a>
-  <form action="/cars/<%=car.id%>" method="post">
-        <input type="hidden" name="_method" value="delete">
-        <input type="submit" value="Borrar">
-  </form>
-  </ul>
+  <li><%=@car.model%></li>
 
-  <ul>
-  <li><%= car.model %></li>
-  <a href="/cars/<%=car.id%>/edit">Editar</a>
-  <form action="/cars/<%=car.id%>" method="post">
-        <input type="hidden" name="_method" value="delete">
-        <input type="submit" value="Borrar">
-  </form>
-  </ul>
+  <img class="img-responsive" src="<%= @car.img_url %>">
 
-  <ul>
-  <li><%= car.img_url %></li>
+  <br>
+
   <a href="/cars/<%=car.id%>/edit">Editar</a>
+
+  <br>
+
   <form action="/cars/<%=car.id%>" method="post">
         <input type="hidden" name="_method" value="delete">
         <input type="submit" value="Borrar">
@@ -30,5 +20,4 @@
 <% end %>
 </ul>
 
-
-<a href="/cars/new">Create new car</a>
+<a href="/cars/new">Create new car</a> -->

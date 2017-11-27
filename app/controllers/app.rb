@@ -7,7 +7,7 @@ end
 #index
 get '/cars' do
   @cars = Car.all
-  erb :"/cars/index"
+  erb :"cars/index"
 end
 
 #new
@@ -26,6 +26,11 @@ get '/cars/:id' do
   @car = Car.find(params[:id])
   erb :"cars/show"
 end
+#
+# get '/cars/:id' do
+#   @car = Car.find(params[:id])
+#   erb :"cars/show"
+# end
 
 #edit
 get '/cars/:id/edit' do
